@@ -1,0 +1,24 @@
+{% extends 'students/base.html'%}
+{% block title %}Department Courses {% endblock %}}
+
+{% block body %}
+
+    <h2> A list of department Courses</h2>
+    <table class="table table-striped">
+       <tr>
+
+           <th>Code</th>
+           <th>Name</th>
+           <th>Description</th>
+       </tr>
+
+        {% for course in department.course_set_all %}
+        <tr>
+            <td> {{course.code}}</td>
+            <td>{{course.name}}</td>
+            <td>{{Course.description}}</td>
+        </tr>
+       {% endfor %}
+    </table>
+
+{% endblock %}

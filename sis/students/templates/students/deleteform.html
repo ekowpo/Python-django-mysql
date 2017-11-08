@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Are you Sure wish to delete this semester</h2>
+<form method="post"> {% csrf_token %}
+
+    {{ form.as_p }}
+    <button type="Submit">delete</button>
+    <button><a href="/students/">Cancel</a> </button>
+</form>
+
+{% endblock %}

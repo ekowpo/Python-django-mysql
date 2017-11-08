@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">CSIS</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+    </div>
+
+     <ul class="nav navbar-nav" id="topNavBar">
+             <li>
+                 <a href="/students/">
+                     Semester
+
+                 </a>
+             </li>
+
+
+         </ul>
+
+
+     </ul>
+    </div>
+</nav>
+
+
+</div>
+<div class="container">
+   {% block content %}
+
+
+    {% endblock content%}
+
+</div>
+
+    </body>
+</html>
+

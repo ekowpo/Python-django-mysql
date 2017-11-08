@@ -1,0 +1,29 @@
+{%extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row"> <h2 style="text-align: center"> List of Semester </h2> </div>
+    <div class="row">
+        <div style="float: right">
+            <a href="/students/semester/create/" class="btn btn-primary">Add</a>
+        </div>
+
+    </div>
+    <div class="row">
+        {% if all_semesters %}
+        <table class="table table-striped">
+          <tr><th colspan="3"> Semester </th></tr>
+         {% for semester in all_semesters %}
+        <tr> <td> <a href="/students/semester/{{semester.id}}/">{{semester}}</a></td>
+            <td> <a href="/students/semester/{{semester.id}}/update/">delete</a></td>
+            <td> <a href="/students/semester/{{semester.id}}/delete/">delete</a></td></tr>
+        {% endfor %}
+        </table>
+
+        {% else%}
+    <table><tr><td>No Record</td></tr></table>
+
+{% endif %}
+
+    </div>
+</div>
+{% endblock content %}
